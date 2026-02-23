@@ -8,7 +8,10 @@ def fill_table_order(**kwargs):
 
     if exec_date:
         target_dt = (
-            pd.to_datetime(exec_date).tz_convert("Asia/Jakarta").tz_localize(None)
+            pd.to_datetime(exec_date)
+            .tz_convert("Asia/Jakarta")
+            .floor("H")
+            .tz_localize(None)
         )
     else:
         target_dt = pd.Timestamp.now("Asia/Jakarta").floor("H").tz_localize(None)
