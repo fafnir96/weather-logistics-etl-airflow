@@ -23,7 +23,7 @@ with DAG(
     default_args=default_args,
     description="Extract Weather, Pollutant, and Orders Data Hourly",
     start_date=datetime(2026, 2, 20),
-    schedule_interval="*/10 * * * *",
+    schedule_interval="@hourly",
     catchup=False,
     tags=["jakarta", "weather", "hourly"],
 ) as dag:
