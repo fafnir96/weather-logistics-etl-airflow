@@ -31,15 +31,16 @@ raw/
  │    │    ├── extract_polutan.py
  │    │    ├── extract_weather.py
  │    │    └── fill_order_daily.py
- │    └── data/
- │         └── setup_db.py
+ │    ├── data/
+ │    │    └── setup_db.py
+ │    └── README.md
  │
  ├── docker-compose.yaml
  ├── analysis using python.ipynb
  ├── analysis using SQL.ipynb
  ├── backfill_data_polutan_and_weather_1_year.py
- ├── backfill_data_order_daily_1_year.py
- └── README.md
+ └── backfill_data_order_daily_1_year.py
+
 ```
 
 ## 📊 Key Business Insights & Recommendations
